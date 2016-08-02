@@ -1,0 +1,6 @@
+-classpath 'C:\\Users\\Academy07\\Documents\\code\\Application1\\build\\classes\\main;C:\\Users\\Academy07\\Documents\\code\\Application1\\build\\resources\\main;C:\\Users\\Academy07\\.gradle\\caches\\modules-2\\files-2.1\\mysql\\mysql-connector-java\\6.0.3\\49506be68e2ab1b619d77dee24c2e55d399d371a\\mysql-connector-java-6.0.3.jar'
+-d 'C:\\Users\\Academy07\\Documents\\code\\Application1\\build\\docs\\javadoc'
+-doctitle 'Application1 1.0-SNAPSHOT API'
+-quiet 
+-windowtitle 'Application1 1.0-SNAPSHOT API'
+'C:\\Users\\Academy07\\Documents\\code\\Application1\\src\\main\\java\\console\\Main.java'
