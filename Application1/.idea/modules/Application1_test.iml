@@ -11,7 +11,8 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="Application1_main" />
     <orderEntry type="library" name="Gradle: mysql:mysql-connector-java:6.0.3" level="project" />
-    <orderEntry type="library" name="Gradle: junit:junit:4.11" level="project" />
+    <orderEntry type="library" name="Gradle: pl.pragmatists:JUnitParams:1.0.5" level="project" />
+    <orderEntry type="library" name="Gradle: junit:junit:4.12" level="project" />
     <orderEntry type="library" name="Gradle: org.hamcrest:hamcrest-core:1.3" level="project" />
   </component>
   <component name="TestModuleProperties" production-module="Application1_main" />

@@ -11,6 +11,9 @@ public class Film {
     private LocalDate date;
     private Genre genre;
 
+    public Film() {
+    }
+
     public Film(String title, int stock, LocalDate date, Genre genre) {
         if (stock < 0) {
             IllegalArgumentException e = new IllegalArgumentException("Stock cannot be negative");
@@ -23,12 +26,26 @@ public class Film {
         this.genre = genre;
     }
 
+    @Override
+    public boolean equals(Object obj) {
+        return obj instanceof Film ? title.equals(((Film)obj).title) : false;
+    }
+
+    @Override
+    public int hashCode() {
+        return title.hashCode();
+    }
+
     public Long getId() {
         return null;
     }
 
     public String getTitle() {
         return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
     }
 
     public int getStock() {

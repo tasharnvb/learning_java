@@ -43,4 +43,20 @@ public class FilmTest {
     public void constructorShouldThrowExceptionIfStockNegative() {
         new Film("The Pink Panther", -1, LocalDate.of(1964, 1, 20), Genre.COMEDY);
     }
+
+    /**
+     * Override the equals and hashCode methods in the Film class
+     */
+    @Test
+    public void filmsWithSameTitleShouldBeEqual() {
+        // arrange
+        Film film1 = new Film();
+        film1.setTitle("The Godfather");
+        Film film2 = new Film();
+        film2.setTitle("The Godfather");
+
+        // act (execute methods under test) and assert (verify test results)
+        assertTrue(film1.equals(film2));
+        assertTrue(film1.hashCode() == film2.hashCode());
+    }
 }
