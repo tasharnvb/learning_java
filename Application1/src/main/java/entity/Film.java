@@ -10,6 +10,7 @@ public class Film {
     private int stock;
     private LocalDate date;
     private Genre genre;
+    private Long id;
 
     public Film() {
     }
@@ -28,7 +29,7 @@ public class Film {
 
     @Override
     public boolean equals(Object obj) {
-        return obj instanceof Film ? title.equals(((Film)obj).title) : false;
+        return obj instanceof Film ? title.equals(((Film) obj).title) : false;
     }
 
     @Override
@@ -37,7 +38,11 @@ public class Film {
     }
 
     public Long getId() {
-        return null;
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
     }
 
     public String getTitle() {
