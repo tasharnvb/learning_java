@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="session.InMemoryFilmDAOTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2016-08-03T15:21:51" hostname="Academy7" time="0.004">
+<testsuite name="session.InMemoryFilmDAOTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2016-08-03T15:52:28" hostname="Academy7" time="0.243">
   <properties/>
   <testcase name="selectByIdShouldReturnMatchingFilm" classname="session.InMemoryFilmDAOTest" time="0.001"/>
-  <testcase name="selectByTitleShouldGetMatchingFilms" classname="session.InMemoryFilmDAOTest" time="0.001"/>
+  <testcase name="selectByTitleShouldGetMatchingFilms" classname="session.InMemoryFilmDAOTest" time="0.24"/>
   <testcase name="deleteShouldRemoveFilm" classname="session.InMemoryFilmDAOTest" time="0.0"/>
   <testcase name="updateShouldModifyFilm" classname="session.InMemoryFilmDAOTest" time="0.0"/>
   <testcase name="selectAllShouldReturnCollection" classname="session.InMemoryFilmDAOTest" time="0.0"/>

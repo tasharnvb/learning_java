@@ -5,6 +5,7 @@ import entity.Film;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.HashMap;
+import java.util.stream.Collectors;
 
 /**
  * Created by Academy07 on 03/08/2016.
@@ -48,12 +49,13 @@ public class InMemoryFilmDAO implements FilmDAO {
 
     @Override
     public Collection<Film> selectByTitle(String name) {
-        ArrayList<Film> matchingFilms = new ArrayList<>();
-        for (Film film : films.values()) {
-            if (film.getTitle().contains(name)) {
-                matchingFilms.add(film);
-            }
-        }
-        return matchingFilms;
+//        ArrayList<Film> matchingFilms = new ArrayList<>();
+//        for (Film film : films.values()) {
+//            if (film.getTitle().contains(name)) {
+//                matchingFilms.add(film);
+//            }
+//        }
+//        return matchingFilms;
+        return films.values().stream().filter(film -> film.getTitle().contains(name)).collect(Collectors.toList());
     }
 }
