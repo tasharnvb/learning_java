@@ -33,6 +33,16 @@ public class BloodTest {
         this.id = id;
     }
 
+    @Override
+    public boolean equals(Object obj) {
+        return obj instanceof BloodTest ? patient.equals(((BloodTest)obj).patient) : false;
+    }
+
+    @Override
+    public int hashCode() {
+        return patient.hashCode();
+    }
+
     public int getRedCellCount() {
         return redCellCount;
     }
