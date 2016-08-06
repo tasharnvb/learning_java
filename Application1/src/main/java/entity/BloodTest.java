@@ -15,6 +15,10 @@ public class BloodTest {
     private LocalDate testDate;
     private int id;
 
+    /**
+     * BloodTest constructor with no args
+     * This sets default values if none are passed in
+     */
     public BloodTest() {
         setRedCellCount(0);
         setWhiteCellCount(0);
@@ -24,6 +28,15 @@ public class BloodTest {
         setId(0);
     }
 
+    /**
+     * BloodTest constructor with 6 args
+     * @param redCellCount The patient's red blood cell count
+     * @param whiteCellCount The patient's white blood cell count
+     * @param plateletCount The patient's platelet count
+     * @param patient The patient who is getting the blood test
+     * @param testDate The date of the blood test
+     * @param id The blood test's id
+     */
     public BloodTest(int redCellCount, int whiteCellCount, int plateletCount, Patient patient, LocalDate testDate, int id) {
         this.redCellCount = redCellCount;
         this.whiteCellCount = whiteCellCount;
