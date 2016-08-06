@@ -4,7 +4,7 @@ import java.time.LocalDate;
 
 /**
  * Created by Academy07 on 02/08/2016.
- *
+ * <p>
  * Patient Class
  */
 public class Patient {
@@ -30,13 +30,14 @@ public class Patient {
     }
 
     /**
-     * Patient constructor with 4 args
-     * @param name Name of the patient
-     * @param nhsNumber Patient's NHS number
-     * @param age Age of the patient
-     * @param address Address of the patient
+     * Patient constructor with 6 args
+     *
+     * @param name        Name of the patient
+     * @param nhsNumber   Patient's NHS number
+     * @param age         Age of the patient
+     * @param address     Address of the patient
      * @param dateOfBirth Patient's date of birth
-     * @param bloodType Patient's blood type
+     * @param bloodType   Patient's blood type
      */
     public Patient(String name, String nhsNumber, int age, String address, LocalDate dateOfBirth, BloodType bloodType) {
         this.name = name;
@@ -49,7 +50,7 @@ public class Patient {
 
     @Override
     public boolean equals(Object obj) {
-        return obj instanceof Patient ? nhsNumber.equals(((Patient)obj).nhsNumber) : false;
+        return obj instanceof Patient ? nhsNumber.equals(((Patient) obj).nhsNumber) : false;
     }
 
     @Override
