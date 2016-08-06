@@ -10,6 +10,7 @@ public class Main {
     public static void main(String[] args) {
         Patient[] patients = createPatientArray();
         BloodTest[] bloodTests = createBloodTestArray(patients);
+        BloodManager bloodManager = new BloodManager(patients, bloodTests);
 //        for (int i = 0; i < patients.length; i++) {
 //            System.out.println("Patient " + (i + 1) +":");
 //            System.out.println("Name: " + patients[i].getName());
