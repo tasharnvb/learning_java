@@ -1,5 +1,7 @@
 package nhs;
 
+import java.time.LocalDate;
+
 /**
  * Created by Academy07 on 02/08/2016.
  *
@@ -10,6 +12,9 @@ public class Patient {
     private String nhsNumber;
     private int age;
     private String address;
+    private LocalDate dateOfBirth;
+    private BloodType bloodType;
+
 
     /**
      * Patient constructor with no args
@@ -20,6 +25,8 @@ public class Patient {
         setNhsNumber("000000000");
         setAge(0);
         setAddress("00 Somewhere Road, Someplace, Somewhere, AB1 2CD");
+        setDateOfBirth(LocalDate.now());
+        setBloodType(BloodType.A);
     }
 
     /**
@@ -28,12 +35,26 @@ public class Patient {
      * @param nhsNumber Patient's NHS number
      * @param age Age of the patient
      * @param address Address of the patient
+     * @param dateOfBirth Patient's date of birth
+     * @param bloodType Patient's blood type
      */
-    public Patient(String name, String nhsNumber, int age, String address) {
+    public Patient(String name, String nhsNumber, int age, String address, LocalDate dateOfBirth, BloodType bloodType) {
         this.name = name;
         this.nhsNumber = nhsNumber;
         this.age = age;
         this.address = address;
+        this.dateOfBirth = dateOfBirth;
+        this.bloodType = bloodType;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        return obj instanceof Patient ? nhsNumber.equals(((Patient)obj).nhsNumber) : false;
+    }
+
+    @Override
+    public int hashCode() {
+        return nhsNumber.hashCode();
     }
 
     public String getName() {
@@ -66,5 +87,21 @@ public class Patient {
 
     public void setAddress(String address) {
         this.address = address;
+    }
+
+    public LocalDate getDateOfBirth() {
+        return dateOfBirth;
+    }
+
+    public void setDateOfBirth(LocalDate dateOfBirth) {
+        this.dateOfBirth = dateOfBirth;
+    }
+
+    public BloodType getBloodType() {
+        return bloodType;
+    }
+
+    public void setBloodType(BloodType bloodType) {
+        this.bloodType = bloodType;
     }
 }
