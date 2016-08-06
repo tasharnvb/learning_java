@@ -26,7 +26,7 @@ public class Main {
         printPatientArray(patientsCol.toArray(new Patient[patientsCol.size()])); // http://stackoverflow.com/a/3293970
 
         Collection<String> patientsSearchCol = bloodManager.search(100, 40);
-        for (String patient:patientsSearchCol) {
+        for (String patient : patientsSearchCol) {
             System.out.println(patient);
         }
 

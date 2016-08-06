@@ -100,19 +100,17 @@
           <file leaf-file-name="BloodManager.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/main/java/nhs/BloodManager.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="622">
-                  <caret line="68" column="0" selection-start-line="64" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
+                <state relative-caret-position="600">
+                  <caret line="64" column="0" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
                   <folding>
                     <element signature="imports" expanded="true" />
                     <element signature="e#1130#1131#0" expanded="true" />
                     <element signature="e#1161#1162#0" expanded="true" />
                     <element signature="e#2308#2316#0" expanded="true" />
-                    <element signature="e#2818#2819#0" expanded="true" />
-                    <element signature="e#2849#2850#0" expanded="true" />
-                    <marker date="1470523785998" expanded="false" signature="3000:3011" ph=" { " />
-                    <marker date="1470523785998" expanded="false" signature="3029:3035" ph=" }" />
-                    <marker date="1470523785998" expanded="false" signature="3099:3110" ph=" { " />
-                    <marker date="1470523785998" expanded="false" signature="3139:3145" ph=" }" />
+                    <marker date="1470524345846" expanded="false" signature="2921:2932" ph=" { " />
+                    <marker date="1470524345846" expanded="false" signature="2950:2956" ph=" }" />
+                    <marker date="1470524345846" expanded="false" signature="3020:3031" ph=" { " />
+                    <marker date="1470524345846" expanded="false" signature="3060:3066" ph=" }" />
                   </folding>
                 </state>
               </provider>
@@ -125,8 +123,8 @@
           <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/main/java/nhs/Main.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="586">
-                  <caret line="34" column="56" selection-start-line="34" selection-start-column="56" selection-end-line="34" selection-end-column="56" />
+                <state relative-caret-position="80">
+                  <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
                   <folding>
                     <element signature="imports" expanded="true" />
                     <element signature="method#createPatientArray#0;class#Main#0" expanded="false" />
@@ -1446,14 +1444,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/nhs/BloodType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" column="3" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/nhs/Patient.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="231">
@@ -1462,6 +1452,14 @@
             <element signature="e#1543#1544#0" expanded="true" />
             <element signature="e#1586#1587#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/nhs/BloodType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="4" column="3" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1497,27 +1495,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/nhs/BloodManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="622">
-          <caret line="68" column="0" selection-start-line="64" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
+        <state relative-caret-position="600">
+          <caret line="64" column="0" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1130#1131#0" expanded="true" />
             <element signature="e#1161#1162#0" expanded="true" />
             <element signature="e#2308#2316#0" expanded="true" />
-            <element signature="e#2818#2819#0" expanded="true" />
-            <element signature="e#2849#2850#0" expanded="true" />
-            <marker date="1470523785998" expanded="false" signature="3000:3011" ph=" { " />
-            <marker date="1470523785998" expanded="false" signature="3029:3035" ph=" }" />
-            <marker date="1470523785998" expanded="false" signature="3099:3110" ph=" { " />
-            <marker date="1470523785998" expanded="false" signature="3139:3145" ph=" }" />
+            <marker date="1470524345846" expanded="false" signature="2921:2932" ph=" { " />
+            <marker date="1470524345846" expanded="false" signature="2950:2956" ph=" }" />
+            <marker date="1470524345846" expanded="false" signature="3020:3031" ph=" { " />
+            <marker date="1470524345846" expanded="false" signature="3060:3066" ph=" }" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/nhs/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="586">
-          <caret line="34" column="56" selection-start-line="34" selection-start-column="56" selection-end-line="34" selection-end-column="56" />
+        <state relative-caret-position="80">
+          <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#createPatientArray#0;class#Main#0" expanded="false" />

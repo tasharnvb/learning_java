@@ -62,10 +62,6 @@ public class BloodManager {
         return foundPatient.isPresent() ? foundPatient.get() : null;
     }
 
-    public Collection<Patient> getPatients() {
-        return patients;
-    }
-
     public void setPatients(ArrayList<Patient> patients) {
         this.patients = patients;
     }
