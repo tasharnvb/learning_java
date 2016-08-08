@@ -9,7 +9,7 @@ import java.util.stream.Collectors;
 /**
  * Created by Tasharn on 06/08/2016.
  */
-public class BloodManager {
+public class BloodManager implements IBloodManager {
     private ArrayList<Patient> patients;
     private ArrayList<BloodTest> bloodTests;
 
@@ -27,20 +27,24 @@ public class BloodManager {
         this.bloodTests = bloodTests;
     }
 
+    @Override
     public int addBloodTest(BloodTest bloodTest) {
         // Returns 1 if the blood test was successfully added and 0 if not
         return bloodTests.add(bloodTest) ? 1 : 0;
     }
 
+    @Override
     public int addPatient(Patient patient) {
         // Returns 1 if the patient was successfully added and 0 if not
         return patients.add(patient) ? 1 : 0;
     }
 
+    @Override
     public Collection<Patient> selectAllPatients() {
         return patients;
     }
 
+    @Override
     public Collection<String> search(int redBloodCellCount, int numberOfDays) {
         LocalDate givenDate = LocalDate.now().minusDays(numberOfDays);
         Collection<BloodTest> filteredBloodTests;
@@ -57,6 +61,7 @@ public class BloodManager {
         return filteredBloodTestsStrings;
     }
 
+    @Override
     public Patient selectPatientByNhsNumber(String nhsNumber) {
         Optional<Patient> foundPatient = patients.stream().filter(patient -> patient.getNhsNumber().equals(nhsNumber)).findFirst();
         return foundPatient.isPresent() ? foundPatient.get() : null;

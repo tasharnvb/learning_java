@@ -1,16 +1,24 @@
 package entity;
 
+import javax.persistence.*;
+import java.io.Serializable;
 import java.time.LocalDate;
 
 /**
  * Created by Academy07 on 03/08/2016.
  */
-public class Film {
+@Entity
+public class Film implements Serializable{
     private String title;
     private int stock;
     private LocalDate date;
-    private Genre genre;
+    @Enumerated(EnumType.STRING) private Genre genre;
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+
+    @Version private int version;
 
     public Film() {
     }
@@ -63,5 +71,9 @@ public class Film {
 
     public Genre getGenre() {
         return genre;
+    }
+
+    public void setStock(int stock) {
+        this.stock = stock;
     }
 }

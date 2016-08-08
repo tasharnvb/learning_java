@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="collections.CollectionTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2016-08-06T18:40:00" hostname="DESKTOP-J8QVOTP" time="0.0">
+<testsuite name="collections.CollectionTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2016-08-08T15:49:30" hostname="Academy7" time="0.001">
   <properties/>
   <testcase name="setContainsUniqueObjects" classname="collections.CollectionTest" time="0.0"/>
   <testcase name="listCanStoreDuplicates" classname="collections.CollectionTest" time="0.0"/>
-  <testcase name="mapContainsUniqueKeys" classname="collections.CollectionTest" time="0.0"/>
+  <testcase name="mapContainsUniqueKeys" classname="collections.CollectionTest" time="0.001"/>
   <testcase name="addUpdateAndRemoveFromMap" classname="collections.CollectionTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>

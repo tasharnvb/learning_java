@@ -5,26 +5,38 @@ import entity.Film;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.HashMap;
+import java.util.concurrent.ConcurrentHashMap;
+import java.util.concurrent.atomic.AtomicLong;
 import java.util.stream.Collectors;
 
 /**
  * Created by Academy07 on 03/08/2016.
  */
 public class InMemoryFilmDAO implements FilmDAO {
-    private Long currentId;
-    private HashMap<Long, Film> films;
+    private ISerializer serializer;
+    private AtomicLong currentId = new AtomicLong(1L);;
+    private ConcurrentHashMap<Long, Film> films;
 
     public InMemoryFilmDAO() {
-        currentId = 1L;
-        films = new HashMap<>();
+        films = new ConcurrentHashMap<>();
+        serializer = new Serializer();
+    }
+
+    public InMemoryFilmDAO(ConcurrentHashMap<Long, Film> map, ISerializer doc) {
+        films = map;
+        serializer = doc;
     }
 
     @Override
     public Long insert(Film film) {
-        film.setId(currentId);
-        films.put(currentId, film);
+        long id = currentId.getAndIncrement();
+        film.setId(id);
+        films.put(id, film);
+        if (serializer != null) {
+            serializer.serialize(films);
+        }
         // Should return old value then update
-        return currentId++;
+        return id++;
     }
 
     @Override
@@ -44,6 +56,9 @@ public class InMemoryFilmDAO implements FilmDAO {
 
     @Override
     public Collection selectAll() {
+        if (serializer != null) {
+            films = serializer.deserialize();
+        }
         return films.values();
     }
 

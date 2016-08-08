@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="chess.ParameterisedTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2016-08-06T18:40:00" hostname="DESKTOP-J8QVOTP" time="0.01">
+<testsuite name="chess.ParameterisedTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2016-08-08T15:49:30" hostname="Academy7" time="0.016">
   <properties/>
   <testcase name="[0] 0, 8 (chessPieceConstructorThrowsExceptionIfNotOnBoard)" classname="chess.ParameterisedTest" time="0.0"/>
-  <testcase name="[1] 8, 0 (chessPieceConstructorThrowsExceptionIfNotOnBoard)" classname="chess.ParameterisedTest" time="0.0"/>
-  <testcase name="[2] -1, 0 (chessPieceConstructorThrowsExceptionIfNotOnBoard)" classname="chess.ParameterisedTest" time="0.0"/>
+  <testcase name="[1] 8, 0 (chessPieceConstructorThrowsExceptionIfNotOnBoard)" classname="chess.ParameterisedTest" time="0.001"/>
+  <testcase name="[2] -1, 0 (chessPieceConstructorThrowsExceptionIfNotOnBoard)" classname="chess.ParameterisedTest" time="0.001"/>
   <testcase name="[3] 0, -1 (chessPieceConstructorThrowsExceptionIfNotOnBoard)" classname="chess.ParameterisedTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
