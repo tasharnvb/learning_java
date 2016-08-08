@@ -52,7 +52,7 @@ public class BloodManager {
         filteredBloodTests = bloodTests.stream().filter(bloodTest -> (bloodTest.getRedCellCount() < redBloodCellCount) && (bloodTest.getTestDate().isEqual(givenDate) || bloodTest.getTestDate().isAfter(givenDate))).collect(Collectors.toList());
         ArrayList<String> filteredBloodTestsStrings = new ArrayList<String>();
         for (BloodTest bloodTest : filteredBloodTests) {
-            filteredBloodTestsStrings.add(bloodTest.toString());
+            filteredBloodTestsStrings.add("Test Id: " + Integer.toString(bloodTest.getId()) + ", Patient: " + bloodTest.getPatient().getName());
         }
         return filteredBloodTestsStrings;
     }

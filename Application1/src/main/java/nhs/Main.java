@@ -24,11 +24,17 @@ public class Main {
 
         Collection<Patient> patientsCol = bloodManager.selectAllPatients();
         printPatientArray(patientsCol.toArray(new Patient[patientsCol.size()])); // http://stackoverflow.com/a/3293970
+        Collection<BloodTest> bloodTestsCol = bloodManager.getBloodTests();
+        printBloodTestArray(bloodTestsCol.toArray(new BloodTest[bloodTestsCol.size()]));
 
         Collection<String> patientsSearchCol = bloodManager.search(100, 40);
         for (String patient : patientsSearchCol) {
             System.out.println(patient);
         }
+        // The above can be written using a lambda expression
+//        patientsSearchCol.forEach(patient -> System.out.println(patient));
+
+        System.out.println();
 
         Patient foundPatient = bloodManager.selectPatientByNhsNumber("0123456789");
         System.out.println(foundPatient.getName());
