@@ -10,7 +10,7 @@ public class Book {
     public Book() {
     }
 
-    public Book(String title, String isbn) throws BookException {
+    public Book(String isbn, String title) throws BookException {
         this.title = title;
         setIsbn(isbn);
     }

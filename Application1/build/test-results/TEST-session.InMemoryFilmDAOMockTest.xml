@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="session.InMemoryFilmDAOMockTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2016-08-10T10:18:48" hostname="Academy7" time="0.063">
+<testsuite name="session.InMemoryFilmDAOMockTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2016-08-10T14:00:09" hostname="Academy7" time="0.055">
   <properties/>
-  <testcase name="selectAllShouldCallDeserializeMethodOfSerializer" classname="session.InMemoryFilmDAOMockTest" time="0.032"/>
-  <testcase name="insertShouldCallSerializeMethodOfSerializer" classname="session.InMemoryFilmDAOMockTest" time="0.031"/>
+  <testcase name="selectAllShouldCallDeserializeMethodOfSerializer" classname="session.InMemoryFilmDAOMockTest" time="0.034"/>
+  <testcase name="insertShouldCallSerializeMethodOfSerializer" classname="session.InMemoryFilmDAOMockTest" time="0.021"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

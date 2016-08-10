@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="nhs.DbBloodManagerTest" tests="2" skipped="2" failures="0" errors="0" timestamp="2016-08-10T10:18:47" hostname="Academy7" time="0.0">
+<testsuite name="nhs.DbBloodManagerTest" tests="2" skipped="2" failures="0" errors="0" timestamp="2016-08-10T14:00:09" hostname="Academy7" time="0.0">
   <properties/>
   <testcase name="searchShouldReturnMatchingPatientName" classname="nhs.DbBloodManagerTest" time="0.0">
     <skipped/>

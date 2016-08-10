@@ -3,6 +3,7 @@ package session;
 import entity.Film;
 import entity.Genre;
 import org.junit.BeforeClass;
+import org.junit.Ignore;
 import org.junit.Test;
 
 import java.sql.Connection;
@@ -17,7 +18,7 @@ import static org.junit.Assert.*;
 /**
  * set <property name="hbm2ddl.auto">update</property> in persistence.xml
  */
-//@Ignore
+@Ignore
 public class JpaFilmDAOIT {
 
     private Logger logger = Logger.getLogger(Logger.GLOBAL_LOGGER_NAME);

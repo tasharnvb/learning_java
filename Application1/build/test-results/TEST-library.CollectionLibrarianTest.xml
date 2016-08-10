@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="library.CollectionLibrarianTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2016-08-10T14:00:09" hostname="Academy7" time="0.034">
+  <properties/>
+  <testcase name="deleteBookRemovesBookFromCollection" classname="library.CollectionLibrarianTest" time="0.01"/>
+  <testcase name="selectAllReturnsAllBooks" classname="library.CollectionLibrarianTest" time="0.0"/>
+  <testcase name="selectByPartOfTitleShouldReturnsBooksThatContainSpecifiedString" classname="library.CollectionLibrarianTest" time="0.02"/>
+  <testcase name="addBookAddsToCollection" classname="library.CollectionLibrarianTest" time="0.0"/>
+  <testcase name="selectByIsbnReturnsSpecifiedBook" classname="library.CollectionLibrarianTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
