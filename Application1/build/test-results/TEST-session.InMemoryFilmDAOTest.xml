@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="session.InMemoryFilmDAOTest" tests="6" skipped="1" failures="0" errors="0" timestamp="2016-08-10T14:00:09" hostname="Academy7" time="0.076">
+<testsuite name="session.InMemoryFilmDAOTest" tests="6" skipped="1" failures="0" errors="0" timestamp="2016-08-10T14:08:05" hostname="Academy7" time="0.09">
   <properties/>
-  <testcase name="selectByIdShouldReturnMatchingFilm" classname="session.InMemoryFilmDAOTest" time="0.016"/>
+  <testcase name="selectByIdShouldReturnMatchingFilm" classname="session.InMemoryFilmDAOTest" time="0.024"/>
   <testcase name="selectByTitleShouldGetMatchingFilms" classname="session.InMemoryFilmDAOTest" time="0.02"/>
   <testcase name="deleteShouldRemoveFilm" classname="session.InMemoryFilmDAOTest" time="0.0">
     <skipped/>
   </testcase>
-  <testcase name="updateShouldModifyFilm" classname="session.InMemoryFilmDAOTest" time="0.012"/>
-  <testcase name="selectAllShouldReturnCollection" classname="session.InMemoryFilmDAOTest" time="0.022"/>
-  <testcase name="insertShouldReturnGeneratedId" classname="session.InMemoryFilmDAOTest" time="0.004"/>
+  <testcase name="updateShouldModifyFilm" classname="session.InMemoryFilmDAOTest" time="0.013"/>
+  <testcase name="selectAllShouldReturnCollection" classname="session.InMemoryFilmDAOTest" time="0.024"/>
+  <testcase name="insertShouldReturnGeneratedId" classname="session.InMemoryFilmDAOTest" time="0.007"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

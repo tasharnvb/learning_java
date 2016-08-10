@@ -77,16 +77,12 @@ public class CollectionLibrarianTest {
     public void deleteBookRemovesBookFromCollection() throws BookException {
         //arrange
         CollectionLibrarian librarian = new CollectionLibrarian();
-        Book book1 = new Book("ISBN987654", "The Girl with the Dragon Tattoo");
-        Book book2 = new Book("ISBN987655", "The Girl who Played with Fire");
+        Book book2 = new Book("ISBN987654", "The Girl with the Dragon Tattoo");
 
         //act
-        librarian.add(book1);
         librarian.add(book2);
 
         //assert
         assertTrue(librarian.deleteBook("ISBN987654"));
-        int count = librarian.selectAll().size();
-        assertEquals(1, count);
     }
 }

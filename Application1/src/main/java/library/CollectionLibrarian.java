@@ -32,6 +32,6 @@ public class CollectionLibrarian implements ILibrarian {
 
     public boolean deleteBook(String isbn) {
         Optional<Book> foundBook = books.stream().filter(book -> book.getIsbn().equals(isbn)).findFirst();
-        return foundBook.isPresent() ? books.remove(foundBook.get()) : null;
+        return foundBook.isPresent() ? books.remove(foundBook.get()) : false;
     }
 }

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="library.BookTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2016-08-10T14:00:08" hostname="Academy7" time="1.056">
+<testsuite name="library.BookTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2016-08-10T14:08:02" hostname="Academy7" time="3.041">
   <properties/>
-  <testcase name="selectBooksRetrievesAllBooks" classname="library.BookTest" time="0.694"/>
-  <testcase name="isbnShouldHave10Characters" classname="library.BookTest" time="0.197"/>
-  <testcase name="addBookAddsRowToTable" classname="library.BookTest" time="0.164"/>
+  <testcase name="selectBooksRetrievesAllBooks" classname="library.BookTest" time="1.87"/>
+  <testcase name="isbnShouldHave10Characters" classname="library.BookTest" time="0.474"/>
+  <testcase name="addBookAddsRowToTable" classname="library.BookTest" time="0.695"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

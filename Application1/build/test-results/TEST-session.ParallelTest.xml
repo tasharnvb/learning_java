@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="session.ParallelTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2016-08-10T14:00:10" hostname="Academy7" time="5.847">
+<testsuite name="session.ParallelTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2016-08-10T14:08:05" hostname="Academy7" time="5.841">
   <properties/>
-  <testcase name="shouldRunInParallel2" classname="session.ParallelTest" time="0.809"/>
-  <testcase name="shouldRunInParallel1" classname="session.ParallelTest" time="5.841"/>
+  <testcase name="shouldRunInParallel2" classname="session.ParallelTest" time="0.815"/>
+  <testcase name="shouldRunInParallel1" classname="session.ParallelTest" time="5.838"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
