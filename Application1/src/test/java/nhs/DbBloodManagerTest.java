@@ -13,6 +13,14 @@ import static org.junit.Assert.assertTrue;
  */
 public class DbBloodManagerTest {
 
+    @org.junit.Before
+    public void initialize() {
+        bloodManager.addBloodTest(bloodTest1);
+        bloodManager.addBloodTest(bloodTest2);
+        bloodManager.addBloodTest(bloodTest3);
+        bloodManager.addBloodTest(bloodTest4);
+    }
+
     //arrange
     IBloodManager bloodManager = new DbBloodManager();
 
@@ -23,14 +31,6 @@ public class DbBloodManagerTest {
     BloodTest bloodTest2 = new BloodTest(200, 50, 10, patient2, LocalDate.of(2016, 4, 25), 2);
     BloodTest bloodTest3 = new BloodTest(300, 50, 10, patient1, LocalDate.of(2016, 6, 25), 3);
     BloodTest bloodTest4 = new BloodTest(400, 50, 10, patient2, LocalDate.of(2016, 7, 25), 4);
-
-    @org.junit.Before
-    public void initialize() {
-        bloodManager.addBloodTest(bloodTest1);
-        bloodManager.addBloodTest(bloodTest2);
-        bloodManager.addBloodTest(bloodTest3);
-        bloodManager.addBloodTest(bloodTest4);
-    }
 
     @Test
     public void searchShouldReturnMatchingPatientName() {

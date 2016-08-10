@@ -8,7 +8,7 @@ import java.util.Collection;
 public interface IBloodManager {
     int addBloodTest(BloodTest bloodTest);
 
-    int addPatient(Patient patient);
+    void addPatient(Patient patient);
 
     Collection<Patient> selectAllPatients();
 

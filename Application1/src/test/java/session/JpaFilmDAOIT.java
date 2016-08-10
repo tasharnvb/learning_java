@@ -28,7 +28,7 @@ public class JpaFilmDAOIT {
     // runs once before any of the test methods
     @BeforeClass
     public static void setup() {
-        String url = "jdbc:mysql://localhost:3306/filmstore?serverTimezone=BST";
+        String url = "jdbc:mysql://localhost:3306/filmstore";
         try (Connection connection = DriverManager.getConnection(url, "root", "password")) {
             try (Statement statement = connection.createStatement()) {
                 for (String command : commands) {

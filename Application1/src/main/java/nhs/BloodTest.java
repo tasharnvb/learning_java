@@ -47,12 +47,12 @@ public class BloodTest {
 
     @Override
     public boolean equals(Object obj) {
-        return obj instanceof BloodTest ? patient.equals(((BloodTest) obj).patient) : false;
+        return ((BloodTest) obj).id == id;
     }
 
     @Override
     public int hashCode() {
-        return patient.hashCode();
+        return id;
     }
 
     public int getRedCellCount() {
