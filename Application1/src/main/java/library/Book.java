@@ -8,13 +8,11 @@ public class Book {
     private String isbn;
 
     public Book() {
-        title = "hello";
-        isbn = "world";
     }
 
-    public Book(String title, String isbn) {
+    public Book(String title, String isbn) throws BookException {
         this.title = title;
-        this.isbn = isbn;
+        setIsbn(isbn);
     }
 
     @Override
@@ -40,7 +38,11 @@ public class Book {
         return isbn;
     }
 
-    public void setIsbn(String isbn) {
+    public void setIsbn(String isbn) throws BookException {
+        if (isbn.length() != 10) {
+            BookException e = new BookException("The ISBN must be 10 characters");
+            throw e;
+        }
         this.isbn = isbn;
     }
 }

@@ -34,9 +34,9 @@ public class BloodManager implements IBloodManager {
     }
 
     @Override
-    public int addPatient(Patient patient) {
+    public void addPatient(Patient patient) {
         // Returns 1 if the patient was successfully added and 0 if not
-        return patients.add(patient) ? 1 : 0;
+        patients.add(patient);
     }
 
     @Override

@@ -20,25 +20,25 @@
 <tr>
 <td>
 <div class="infoBox" id="tests">
-<div class="counter">36</div>
+<div class="counter">31</div>
 <p>tests</p>
 </div>
 </td>
 <td>
 <div class="infoBox" id="failures">
-<div class="counter">11</div>
+<div class="counter">1</div>
 <p>failures</p>
 </div>
 </td>
 <td>
 <div class="infoBox" id="ignored">
-<div class="counter">0</div>
+<div class="counter">3</div>
 <p>ignored</p>
 </div>
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">7.916s</div>
+<div class="counter">7.250s</div>
 <p>duration</p>
 </div>
 </td>
@@ -48,7 +48,7 @@
 </td>
 <td>
 <div class="infoBox failures" id="successRate">
-<div class="percent">69%</div>
+<div class="percent">96%</div>
 <p>successful</p>
 </div>
 </td>
@@ -61,14 +61,26 @@
 <a href="#tab0">Failed tests</a>
 </li>
 <li>
-<a href="#tab1">Packages</a>
+<a href="#tab1">Ignored tests</a>
 </li>
 <li>
-<a href="#tab2">Classes</a>
+<a href="#tab2">Packages</a>
+</li>
+<li>
+<a href="#tab3">Classes</a>
 </li>
 </ul>
 <div id="tab0" class="tab">
 <h2>Failed tests</h2>
+<ul class="linkList">
+<li>
+<a href="classes/session.JpaFilmDAOIT.html">JpaFilmDAOIT</a>.
+<a href="classes/session.JpaFilmDAOIT.html#classMethod">classMethod</a>
+</li>
+</ul>
+</div>
+<div id="tab1" class="tab">
+<h2>Ignored tests</h2>
 <ul class="linkList">
 <li>
 <a href="classes/nhs.DbBloodManagerTest.html">DbBloodManagerTest</a>.
@@ -79,44 +91,12 @@
 <a href="classes/nhs.DbBloodManagerTest.html#searchShouldReturnMatchingPatientNames">searchShouldReturnMatchingPatientNames</a>
 </li>
 <li>
-<a href="classes/session.InMemoryFilmDAOIT.html">InMemoryFilmDAOIT</a>.
-<a href="classes/session.InMemoryFilmDAOIT.html#serializeAndDeserializeFilmsTest">serializeAndDeserializeFilmsTest</a>
-</li>
-<li>
 <a href="classes/session.InMemoryFilmDAOTest.html">InMemoryFilmDAOTest</a>.
-<a href="classes/session.InMemoryFilmDAOTest.html#selectAllShouldReturnCollection">selectAllShouldReturnCollection</a>
-</li>
-<li>
-<a href="classes/session.JpaFilmDAOIT.html">JpaFilmDAOIT</a>.
-<a href="classes/session.JpaFilmDAOIT.html#deleteShouldRemoveFilmFromStore">deleteShouldRemoveFilmFromStore</a>
-</li>
-<li>
-<a href="classes/session.JpaFilmDAOIT.html">JpaFilmDAOIT</a>.
-<a href="classes/session.JpaFilmDAOIT.html#insertShouldAddFilmToStore">insertShouldAddFilmToStore</a>
-</li>
-<li>
-<a href="classes/session.JpaFilmDAOIT.html">JpaFilmDAOIT</a>.
-<a href="classes/session.JpaFilmDAOIT.html#selectAllShouldReturn250Films">selectAllShouldReturn250Films</a>
-</li>
-<li>
-<a href="classes/session.JpaFilmDAOIT.html">JpaFilmDAOIT</a>.
-<a href="classes/session.JpaFilmDAOIT.html#selectByIdShouldReturnCorrectFilmFromStore">selectByIdShouldReturnCorrectFilmFromStore</a>
-</li>
-<li>
-<a href="classes/session.JpaFilmDAOIT.html">JpaFilmDAOIT</a>.
-<a href="classes/session.JpaFilmDAOIT.html#selectByTitleShouldGetMatchingFilms">selectByTitleShouldGetMatchingFilms</a>
-</li>
-<li>
-<a href="classes/session.JpaFilmDAOIT.html">JpaFilmDAOIT</a>.
-<a href="classes/session.JpaFilmDAOIT.html#updateShouldModifyFilmInStore">updateShouldModifyFilmInStore</a>
-</li>
-<li>
-<a href="classes/session.ParallelTest.html">ParallelTest</a>.
-<a href="classes/session.ParallelTest.html#shouldRunInParallel1">shouldRunInParallel1</a>
+<a href="classes/session.InMemoryFilmDAOTest.html#deleteShouldRemoveFilm">deleteShouldRemoveFilm</a>
 </li>
 </ul>
 </div>
-<div id="tab1" class="tab">
+<div id="tab2" class="tab">
 <h2>Packages</h2>
 <table>
 <thead>
@@ -137,7 +117,7 @@
 <td>7</td>
 <td>0</td>
 <td>0</td>
-<td>0.009s</td>
+<td>0.015s</td>
 <td class="success">100%</td>
 </tr>
 <tr>
@@ -147,7 +127,7 @@
 <td>4</td>
 <td>0</td>
 <td>0</td>
-<td>0.001s</td>
+<td>0.032s</td>
 <td class="success">100%</td>
 </tr>
 <tr>
@@ -157,33 +137,43 @@
 <td>3</td>
 <td>0</td>
 <td>0</td>
-<td>0.001s</td>
+<td>0s</td>
 <td class="success">100%</td>
 </tr>
 <tr>
-<td class="failures">
+<td class="success">
+<a href="packages/library.html">library</a>
+</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0s</td>
+<td class="success">100%</td>
+</tr>
+<tr>
+<td class="skipped">
 <a href="packages/nhs.html">nhs</a>
 </td>
 <td>4</td>
-<td>2</td>
 <td>0</td>
-<td>0.128s</td>
-<td class="failures">50%</td>
+<td>2</td>
+<td>0.062s</td>
+<td class="skipped">100%</td>
 </tr>
 <tr>
 <td class="failures">
 <a href="packages/session.html">session</a>
 </td>
-<td>18</td>
-<td>9</td>
-<td>0</td>
-<td>7.777s</td>
-<td class="failures">50%</td>
+<td>12</td>
+<td>1</td>
+<td>1</td>
+<td>7.141s</td>
+<td class="failures">90%</td>
 </tr>
 </tbody>
 </table>
 </div>
-<div id="tab2" class="tab">
+<div id="tab3" class="tab">
 <h2>Classes</h2>
 <table>
 <thead>
@@ -203,7 +193,7 @@
 <td>3</td>
 <td>0</td>
 <td>0</td>
-<td>0.007s</td>
+<td>0s</td>
 <td class="success">100%</td>
 </tr>
 <tr>
@@ -212,7 +202,7 @@
 <td>4</td>
 <td>0</td>
 <td>0</td>
-<td>0.002s</td>
+<td>0.015s</td>
 <td class="success">100%</td>
 </tr>
 <tr>
@@ -221,7 +211,7 @@
 <td>4</td>
 <td>0</td>
 <td>0</td>
-<td>0.001s</td>
+<td>0.032s</td>
 <td class="success">100%</td>
 </tr>
 <tr>
@@ -230,7 +220,16 @@
 <td>3</td>
 <td>0</td>
 <td>0</td>
-<td>0.001s</td>
+<td>0s</td>
+<td class="success">100%</td>
+</tr>
+<tr>
+<td class="success"/>
+<a href="classes/library.BookTest.html">library.BookTest</a>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0s</td>
 <td class="success">100%</td>
 </tr>
 <tr>
@@ -239,26 +238,26 @@
 <td>2</td>
 <td>0</td>
 <td>0</td>
-<td>0.121s</td>
+<td>0.062s</td>
 <td class="success">100%</td>
 </tr>
 <tr>
-<td class="failures"/>
+<td class="skipped"/>
 <a href="classes/nhs.DbBloodManagerTest.html">nhs.DbBloodManagerTest</a>
 <td>2</td>
-<td>2</td>
 <td>0</td>
-<td>0.007s</td>
-<td class="failures">0%</td>
+<td>2</td>
+<td>0s</td>
+<td class="skipped">-</td>
 </tr>
 <tr>
-<td class="failures"/>
+<td class="success"/>
 <a href="classes/session.InMemoryFilmDAOIT.html">session.InMemoryFilmDAOIT</a>
 <td>1</td>
-<td>1</td>
 <td>0</td>
-<td>0.007s</td>
-<td class="failures">0%</td>
+<td>0</td>
+<td>0.047s</td>
+<td class="success">100%</td>
 </tr>
 <tr>
 <td class="success"/>
@@ -266,35 +265,35 @@
 <td>2</td>
 <td>0</td>
 <td>0</td>
-<td>0.042s</td>
+<td>0.063s</td>
 <td class="success">100%</td>
 </tr>
 <tr>
-<td class="failures"/>
+<td class="skipped"/>
 <a href="classes/session.InMemoryFilmDAOTest.html">session.InMemoryFilmDAOTest</a>
 <td>6</td>
-<td>1</td>
 <td>0</td>
-<td>0.005s</td>
-<td class="failures">83%</td>
+<td>1</td>
+<td>0.109s</td>
+<td class="skipped">100%</td>
 </tr>
 <tr>
 <td class="failures"/>
 <a href="classes/session.JpaFilmDAOIT.html">session.JpaFilmDAOIT</a>
-<td>7</td>
-<td>6</td>
-<td>0</td>
-<td>0.011s</td>
-<td class="failures">14%</td>
-</tr>
-<tr>
-<td class="failures"/>
-<a href="classes/session.ParallelTest.html">session.ParallelTest</a>
-<td>2</td>
+<td>1</td>
 <td>1</td>
 <td>0</td>
-<td>7.712s</td>
-<td class="failures">50%</td>
+<td>0s</td>
+<td class="failures">0%</td>
+</tr>
+<tr>
+<td class="success"/>
+<a href="classes/session.ParallelTest.html">session.ParallelTest</a>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>6.922s</td>
+<td class="success">100%</td>
 </tr>
 </tbody>
 </table>
@@ -307,7 +306,7 @@
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 2.13</a> at 08-Aug-2016 16:49:38</p>
+<a href="http://www.gradle.org">Gradle 2.13</a> at 10-Aug-2016 11:18:54</p>
 </div>
 </div>
 </body>

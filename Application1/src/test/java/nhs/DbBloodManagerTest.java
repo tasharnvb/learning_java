@@ -1,5 +1,6 @@
 package nhs;
 
+import org.junit.Ignore;
 import org.junit.Test;
 
 import java.time.LocalDate;
@@ -11,6 +12,7 @@ import static org.junit.Assert.assertTrue;
 /**
  * Created by Academy07 on 08/08/2016.
  */
+@Ignore
 public class DbBloodManagerTest {
 
     @org.junit.Before

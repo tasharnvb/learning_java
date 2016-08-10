@@ -8,13 +8,17 @@ import java.util.HashSet;
  */
 public class Main {
     public static void main(String[] args) {
-        Book book1 = new Book("The Hunger Games", "A1001");
-        Book book2 = new Book("The Hunger Games", "A1001");
-        System.out.println(book1.equals(book2));
+        try {
+            Book book1 = new Book("The Hunger Games", "A1001");
+            Book book2 = new Book("The Hunger Games", "A1001");
+            System.out.println(book1.equals(book2));
 
-        HashSet<Book> books = new HashSet<>();
-        books.add(book1);
-        books.remove(book2);
-        System.out.println(books.size());
+            HashSet<Book> books = new HashSet<>();
+            books.add(book1);
+            books.remove(book2);
+            System.out.println(books.size());
+        } catch (BookException e) {
+            System.out.println(e.getMessage());
+        }
     }
 }

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="chess.OverrideObjectTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2016-08-08T15:49:30" hostname="Academy7" time="0.008">
+<testsuite name="chess.OverrideObjectTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2016-08-10T10:18:47" hostname="Academy7" time="0.0">
   <properties/>
-  <testcase name="equalHashcodes" classname="chess.OverrideObjectTest" time="0.006"/>
+  <testcase name="equalHashcodes" classname="chess.OverrideObjectTest" time="0.0"/>
   <testcase name="valueEquality" classname="chess.OverrideObjectTest" time="0.0"/>
-  <testcase name="referenceEquality" classname="chess.OverrideObjectTest" time="0.001"/>
+  <testcase name="referenceEquality" classname="chess.OverrideObjectTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
